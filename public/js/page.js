@@ -99,12 +99,13 @@ $(document).ready(function() {
 	}); 
 
 	/* post form data to server */
+
 	function sendMail(name, email, comment) {
 		var postdata = {
-			'name': $("#name").val(),
-			'email': $("#email").val(),
-			'comment': $("#comment").val()
-		};
+		'name': $("#name").val(),
+		'email': $("#email").val(),
+		'comment': $("#comment").val()
+	};
 		$.ajax({
 			type: 'POST',
 			url: '/api/sendmail',
@@ -116,19 +117,13 @@ $(document).ready(function() {
 				$("#comment").val('');
 				// message to user
 				$("#message").html('Thank you for the feedback!');
-
 			},
 			error: function(error) {
-				$("#name").val('');
-				$("#email").val('');
-				$("#comment").val('');
-				// message to user
-				$("#message").html('Thank you for the feedback!');
+			$("#message").html('Sorry! an error occured while sending your feedback.');
 			}
-
-		});
+			});
 	}
-	
+
 	/* escape html entities for preventing XXS */
 	function escapeHtml(text) {
 		var map = {
