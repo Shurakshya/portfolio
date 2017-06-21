@@ -31,7 +31,7 @@ module.exports.sendMail = function(req, res) {
 
 	transporter.sendMail(mailOptions, function(err, info) {
 		if (err) {
-			console.log(err);
+			sendJSONresponse(res,400,err);
 			return;
 		} else if (!info) {
 			sendJSONresponse(res, 404, {
