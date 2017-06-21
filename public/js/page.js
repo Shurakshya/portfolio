@@ -135,7 +135,7 @@ $(document).ready(function() {
 	var currentTime;
       /* live current time */
       setInterval(function() {
-          currentTime = moment.utc(new Date).local().format('YYYY.MM.DD, hh:mm:ss a');
+          currentTime = moment.utc(new Date).local().format('hh:mm:ss a');
           $('#time').text(currentTime);
       }, 1000);
 
