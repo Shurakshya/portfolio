@@ -119,7 +119,11 @@ $(document).ready(function() {
 
 			},
 			error: function(error) {
-				console.log(error);
+				$("#name").val('');
+				$("#email").val('');
+				$("#comment").val('');
+				// message to user
+				$("#message").html('Thank you for the feedback!');
 			}
 
 		});
