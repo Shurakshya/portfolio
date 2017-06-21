@@ -1,0 +1,240 @@
+<!DOCTYPE html lang="en">
+    <head>
+      <title> Portfolio </title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="author" content="Shurakshya Kharel">
+
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700|Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
+      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+      <link rel="stylesheet" href="styles/style.css">
+      <link rel="stylesheet" href="styles/bootstrap-social.css">
+      <link href='http://fonts.googleapis.com/css?family=Roboto:400' rel='stylesheet' type='text/css'>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <script type="text/javascript" src="js/page.js"></script>
+      <script
+        src="https://maps.googleapis.com/maps/api/js">
+      </script>
+      <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+    </head>
+    <body>
+        <div id="main">
+            <!-- navigation -->
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-header ">
+                       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>                        
+                        </button>
+                        <a class="brightness" href="index.html">Home</a> 
+                        <a id="time"></a>                     
+                    </div>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav navbar-right">
+                            
+                            <li><a></a></li>
+                            <li><a href="#about">ABOUT</a></li>
+                            <li><a href="#skills">SKILLS</a></li>
+                            <li><a href="#project">PROJECT</a></li>
+                            <li><a href="#contact">CONTACT</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <hr style="height:1px;border:none;background-color:gray;width:90%;margin:0 auto" />
+            </nav>
+
+            <!-- slideshow starts here -->
+            <div class="homeCarousel">
+
+                    <figure class="show">
+                        <img src="images/IMG0.jpg"/>
+                        <div class="content text-center">
+                            I am a web developer !!!
+                        </div>
+                    </figure>
+                    <figure >
+                        <img src="images/IMG4.jpg"/>   
+                    </figure>  
+                    <figure>
+                        <img src="images/me.jpg"/>               
+                    </figure>
+
+
+                <!-- Left and right controls -->
+
+                    <span class="prev">&laquo;</span>
+                    <span class="next">&raquo;</span>
+            </div>
+
+            <!-- About me Section -->
+            <div class="container-fluid about" id="about">
+                <div class="col-sm-offset-2 col-sm-1 col-xs-2">
+                    <img class="textwrap" src="images/pen1.png" /> 
+                </div>
+                <div class="col-sm-9 col-xs-10">
+                    <h1>About <span class="logo"> Me</span></h1>
+                    <div class="row about-row">     
+                        Hello, 
+                        I am Shurakshya Kharel, a software developer and like every other, a dreamer and a doer. 
+                        I am a future graduate from Helsinki Metropolia University Of Applied Science in Information Technology.<br/>
+                        Besides being a developer, I am basically a word fanatic, Woman activist, traveller and social worker.  believe in myself. I am the outcome of my choice and decision, not the situation. Thus, I always have my passion for software developments and collusion of creative ideas with the business. 
+                     </div>   
+                </div>  
+            </div> 
+             <hr style="background-color:rgba(0,0,0,0.4); height:2px;">
+
+            <!-- My Skills section -->
+            <div class="container-fluid skill" id="skills">
+                <h1>My Professional
+                    <span class="logo"> Skills </span>
+                </h1>
+                <div class="col-sm-4">
+                    I do not have any extraordinary skills but my passion in what i behold makes me unique amongst the crowd. As I am software learner so I have got skills of software discipline and numerous programming languages.<div class="download">
+                        <a href="/file/cv.pdf" download="cv_shurakshya" className="text-center download-link">DOWNLOAD CV</a>
+                    </div>
+                </div>
+
+                <div class="col-sm-8">
+                    <div class="skill1">
+                        <div class="text"> 
+                            Java 80%
+                        </div>
+                    </div>
+                    <div class="skill2">
+                        <div class="text"> 
+                            Angular 70%
+                        </div>
+
+                    </div>
+                    <div class="skill3">
+                        <div class="text"> 
+                            Node/Express js 80%
+                        </div>
+                    </div>
+                    <div class="skill4">
+                        <div class="text"> 
+                            React.js 50%
+                        </div>
+                    </div>
+                    <div class="skill5">
+                        <div class="text"> 
+                            MySql 90%
+                        </div>
+                    </div>
+                    <div class="skill6">
+                        <div class="text"> 
+                            Mongodb 70%
+                        </div>
+                    </div>
+                    <div class="skill7">
+                        <div class="text"> 
+                            Socket.js 75%
+                        </div>
+                    </div>
+                    <div class="skill8">
+                        <div class="text"> 
+                            Jquery 60%
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr style="background-color:rgba(0,0,0,0.4); height:2px;">     
+            
+            <!-- project and work sample section -->
+            <div class="container-fluid project" id="project">
+                <h1> My 
+                    <span class="logo">Projects </span> 
+                </h1>     
+                <div class="row project-row">
+                    <div class="col-sm-3">
+                        <img src="images/traview.png" />
+                        <div class="imgdetail">
+                            <a href="https://traviewdemo.herokuapp.com/" target="_blank">Traview</a> 
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <img src="images/movektm.png" />
+                        <div class="imgdetail">
+                            <a href="https://github.com/Shurakshya/rentalProject" target="_blank">MoveKTM</a> 
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <img src="images/shuratalk.png" />
+                        <div class="imgdetail">
+                            <a href="https://shuratalk.herokuapp.com/" target="_blank">ShuraTalk</a> 
+                        </div>
+                    </div>
+                </div>
+                <a class="btn-lg" href="https://github.com/Shurakshya/" target="_blank">More Projects</a>
+            </div>
+            <hr style="background-color:rgba(0,0,0,0.4); height:2px;">
+
+            <!-- contact me section here -->
+           
+            <div class="container-fluid contact" id="contact">
+                <h1>Contact 
+                    <span class="logo">Me </span>
+                </h1>
+                 <!-- form for contact me -->
+                <div class="row contact-row">
+                    <div class="col-sm-6">
+                        <!-- <h3> Connect with ME </h3>  -->
+                        <div class="alert alert-info alert-dismissable" style="display:none">
+                            <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                            Thank you for the feedback
+                        </div>
+                        <form>                          
+                            <input placeholder="Name" type="text" id="name" required="" class="validate">
+                            <input placeholder="Email" type="email" id="email" required="" class="validate">
+                            <input placeholder="Feedback" type="text" id="comment" required="" class="validate">  
+                            <button>Submit Feedback</button>
+                        </form>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="well">
+                            <h3> Connect with ME </h3><hr>
+                            <a class="btn btn-social-icon btn-facebook" href="https://www.facebook.com/shurakshya.kharel" target="_blank">
+                                <span class="fa fa-facebook"></span>
+                            </a>
+                            <a class="btn btn-social-icon btn-instagram" href="https://www.instagram.com/shurakshya/" target="_blank">
+                                <span class="fa fa-instagram"></span>
+                            </a>
+                            <a class="btn btn-social-icon btn-linkedin" href="https://www.linkedin.com/in/shurakshya-kharel-81188ba6/" target="_blank">
+                                <span class="fa fa-linkedin"></span>
+                            </a>  
+                            <br/><br/>
+
+                            <span class="sm_head">
+                                Address: <br/>
+                            </span>
+                            Kirstinharju 3D 065, <br/>
+                            Espoo, Finland<br/>
+                            
+                            <a class="logo" id="map">View on Google Maps </a> <br/>
+                            <span class="sm_head">
+                                Telephone:<br/>
+                            </span>
+                            (+358) 456655616   
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+            <hr style="background-color:rgba(0,0,0,0.4); height:2px;">
+             <div id="maprender"></div>
+            <div class="jumbotron copyright">
+                <h3>CopyRight</h3>
+                <p>ShurakshyaKharel&copy; 2017 privacy policy</p>
+            </div>
+            <!-- goToTop -->
+            <i class="arrow-up">
+                <i class="fa fa-arrow-up" style="font-size:25px;color:#fff;padding-top:12px;padding-left:15px" aria-hidden="true"></i>          
+            </i> 
+        </div>
+    </body>
+</html>
