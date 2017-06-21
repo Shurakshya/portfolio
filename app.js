@@ -30,7 +30,7 @@ app.use((req, res, next)=>{
 });
 
 
-app.listen(process.env.PORT || 5000 || 3000,()=>{
+app.listen(process.env.PORT || 3000,()=>{
 	console.log("Express app running on port 3000");
 });
 
