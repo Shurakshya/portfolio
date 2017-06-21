@@ -14,7 +14,6 @@
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
       <script type="text/javascript" src="js/page.js"></script>
       <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjDObtBeqFWIKRWsjIAl0eFBrdbD7RMR0" type="text/javascript"></script>
-      <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
     </head>
     <body>
@@ -45,7 +44,6 @@
 
             <!-- slideshow starts here -->
             <div class="homeCarousel">
-
                     <figure class="show">
                         <img src="images/IMG0.jpg"/>
                         <div class="content text-center">
@@ -178,15 +176,11 @@
                  <!-- form for contact me -->
                 <div class="row contact-row">
                     <div class="col-sm-6">
-                        <!-- <h3> Connect with ME </h3>  -->
-                        <div class="alert alert-info alert-dismissable" style="display:none">
-                            <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-                            Thank you for the feedback
-                        </div>
+                        <div class="form_message"></div>
                         <form>                          
-                            <input placeholder="Name" type="text" id="name" required="" class="validate">
-                            <input placeholder="Email" type="email" id="email" required="" class="validate">
-                            <input placeholder="Feedback" type="text" id="comment" required="" class="validate">  
+                            <input placeholder="Name" type="text" id="name" required="" class="validate" autocomplete="off">
+                            <input placeholder="Email" type="email" id="email" required="" class="validate" autocomplete="off">
+                            <input placeholder="Feedback" type="text" id="comment" required="" class="validate" autocomplete="off">  
                             <button>Submit Feedback</button>
                         </form>
                     </div>
@@ -221,11 +215,15 @@
             </div>
            
             <hr style="background-color:rgba(0,0,0,0.4); height:2px;">
+            <!-- Google map renders here -->
              <div id="maprender"></div>
+
+             <!-- footer element section -->
             <div class="jumbotron copyright">
                 <h3>CopyRight</h3>
                 <p>ShurakshyaKharel&copy; 2017 privacy policy</p>
             </div>
+
             <!-- goToTop -->
             <i class="arrow-up">
                 <i class="fa fa-arrow-up" style="font-size:25px;color:#fff;padding-top:12px;padding-left:15px" aria-hidden="true"></i>          

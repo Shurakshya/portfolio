@@ -9,6 +9,20 @@ var routesApi = require('./server/api_route');
 
 const app = express();
 
+//force use of https for production level 
+const https_redirect = function(req, res, next) {
+  if (process.env.NODE_ENV === 'production') {
+    if (req.headers['x-forwarded-proto'] != 'https') {
+      return res.redirect('https://' + req.headers.host + req.url);
+    } else {
+      return next();
+    }
+  } else {
+    return next();
+  }
+};
+
+app.use(https_redirect);
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));

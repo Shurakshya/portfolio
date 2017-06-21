@@ -25,7 +25,6 @@ hr{
 .navbar-default{
 	width: 100% !important;
 	border-radius: 0 !important;
-	/*height: 120px;*/
 	border: 0;
 	margin:0 auto !important;
 	z-index: 5;
@@ -48,8 +47,6 @@ hr{
 .navbar-header>a {
 	font-family: 'Tangerine', serif;
 	color: rgba(250,17,5, 0.9);
-	/*color: #0490E1;*/
-	/*line-height: 80px;*/
 	margin-bottom: 10px;
 	padding-left: 30px;
 	font-size: 5em;
@@ -107,7 +104,6 @@ figure >img{
 
 .content{
 	position: relative;
-	/*text-align: center;*/
 	margin-top: -450px;
 	z-index: 1;
 	font-size: 6em;
@@ -188,8 +184,6 @@ figure.show{
 	line-height: 1.3em;
 	font-size: 1.5em;
 	font-weight: 400;
-	/*padding : 20px;*/
-	/*width : 80%;*/
 }
 
 
@@ -206,7 +200,6 @@ figure.show{
 }
 
 .skill >.col-sm-4{
-	/*margin-left:20px;*/
 	color:#B40808 ;
 	font-family: Georgia;
 	font-size: 1.2em;
@@ -296,10 +289,8 @@ figure.show{
 .project > h1{
 	padding-left: 15px;
 }
-.project-row{
-	/*background-color: #DADFE1;*/
+.project-row{	
 	margin-left: 20px;
-	/*margin-right: 20px;*/
 	margin-bottom: 10px;
 
 }
@@ -336,7 +327,6 @@ figure.show{
 }
 
 .btn-lg{
-	/*margin-left: 40%;*/
 	margin-bottom: 10px;
 	display: block;
 	margin:  0 auto !important;
@@ -392,9 +382,7 @@ figure.show{
 }
 
 /*contact form starts here*/
-/* label color */
-
-/**/
+/* ######## */
 /*materaial design*/
 
 input::-webkit-input-placeholder, button {
@@ -460,6 +448,7 @@ input:focus::-webkit-input-placeholder, input:valid::-webkit-input-placeholder {
 	height : 400px;
 	display: none;
 } 
+
 /*Footer element starts here*/
 .copyright{
 	padding:10px;

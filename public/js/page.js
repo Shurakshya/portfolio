@@ -1,4 +1,3 @@
-
 $(document).ready(function() {
 	// for load of google map 
 	// View on google maps
@@ -29,6 +28,7 @@ $(document).ready(function() {
 		return false;
 	});
 
+	// for slide show of the pictures
 	(function(){  
 		var counter = 0, // to keep track of current slide
 	    $items = document.querySelectorAll('.homeCarousel figure'), // a collection of all of the slides, caching for performance
@@ -86,37 +86,45 @@ $(document).ready(function() {
 
 	/* send feedback */
 
-	//form submit 
+	//form submit
 	$("form").submit(function(e) {
 
 		e.preventDefault();
 		var name = escapeHtml($("#name").val());
 		var email = escapeHtml($("#email").val());
 		var comment = escapeHtml($("#comment").val());
-
+		$(".form_message").html("<div class='alert alert-info alert-dismissable'><a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a><span id='message'><i class='fa fa-spinner fa-spin'aria-hidden='true'></i></span></div>");
 		sendMail(name, email, comment); // make ajax call to send form data
 		return false;
+	}); 
 
-	});
 	/* post form data to server */
 	function sendMail(name, email, comment) {
 		var postdata = {
-			'name': name,
-			'email': email,
-			'comment': comment
+			'name': $("#name").val(),
+			'email': $("#email").val(),
+			'comment': $("#comment").val()
 		};
-		axios.post('/api/sendmail',postdata)
-		  .then(function (response) {
-			$("#name").val('');
-			$("#email").val('');
-			$("#comment").val('');
-			// message to user baaki xa
-			$('.alert-dismissable').show();
-		  })
-		  .catch(function (error) {
-		    console.log(error);
-		  });
+		$.ajax({
+			type: 'POST',
+			url: '/api/sendmail',
+			data: postdata,
+			contentType: "application/x-www-form-urlencoded",
+			success: function(response) {
+				$("#name").val('');
+				$("#email").val('');
+				$("#comment").val('');
+				// message to user
+				$("#message").html('Thank you for the feedback!');
+
+			},
+			error: function(error) {
+				console.log(error);
+			}
+
+		});
 	}
+	
 	/* escape html entities for preventing XXS */
 	function escapeHtml(text) {
 		var map = {
